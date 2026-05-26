@@ -1,0 +1,95 @@
+/* Reset Default Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Body */
+body{
+    font-family: Arial, sans-serif;
+}
+/* Navbar */
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #222;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+/* Logo */
+.logo{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+/* Nav Links */
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+/* Links */
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+/* Hover Effect */
+.nav-links li a:hover{
+    color: #00bcd4;
+    border-bottom: 2px solid #00bcd4;
+    padding-bottom: 5px;
+}
+/* Hero Section */
+.hero{
+    height: 100vh;
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+/* Hero Text */
+.hero h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.hero p{
+    font-size: 22px;
+}
+/* Content Sections */
+.content{
+    padding: 100px 40px;
+    min-height: 100vh;
+}
+.content h2{
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+/* Responsive Design */
+@media(max-width: 768px){
+
+    .navbar{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .nav-links{
+        flex-direction: column;
+        margin-top: 15px;
+        gap: 15px;
+    }
+    .hero h1{
+        font-size: 35px;
+    }
+    .hero p{
+        font-size: 18px;
+    }
+}
